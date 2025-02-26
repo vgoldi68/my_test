@@ -1,0 +1,17 @@
+В VSCode можно загрузить библиотеки из requirements.txt несколькими способами:
+1. Использование терминала
+Откройте VSCode и выполните в терминале:
+pip install -r requirements.txt
+Если у вас несколько версий Python, уточните нужную
+python -m pip install -r requirements.txt
+2. Автоматическая подгрузка (если используете виртуальное окружение)
+Создайте виртуальное окружение (если его ещё нет)
+python -m venv venv
+Активируйте его:
+Windows (cmd/PowerShell)   venv\Scripts\activate
+Установите зависимости:
+pip install -r requirements.txt
+3. Использование VSCode (Python Extension)
+Если у вас установлен Python Extension:
+Убедитесь, что выбрано правильное интерпретаторное окружение (Ctrl + Shift + P → Python: Select Interpreter).
+В терминале выполните команду установки (pip install -r requirements.txt).
